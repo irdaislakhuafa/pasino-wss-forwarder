@@ -39,7 +39,6 @@ func main() {
 
 	log.Printf("starting server at port %v\n", PORT)
 	http.ListenAndServe(fmt.Sprintf(":%v", PORT), server)
-	// http.ListenAndServe(fmt.Sprintf(":8080"), nil)
 }
 
 func CopyMessages(ws *websocket.Codec, src, dst *websocket.Conn) {
